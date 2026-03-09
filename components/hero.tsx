@@ -5,9 +5,9 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="min-h-screen flex flex-col justify-end px-4 sm:px-5 md:px-10 pb-12 sm:pb-20 border-b border-line relative overflow-hidden">
-      {/* Background watermark */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none select-none">
+    <section className="min-h-[85vh] sm:min-h-screen flex flex-col justify-center sm:justify-end px-4 sm:px-5 md:px-10 pt-24 pb-12 sm:pb-20 border-b border-line relative overflow-hidden">
+      {/* Background watermark — hidden on small mobile, visible from sm up */}
+      <div className="hidden sm:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none select-none">
         <span className="font-serif italic text-[clamp(3rem,11vw,11rem)] text-ink/[0.18] whitespace-nowrap tracking-tight leading-none block">
           Taino Labs
           <sup className="text-[0.28em] not-italic font-sans font-medium tracking-widest align-super text-ink/[0.18] ml-1.5">
@@ -20,12 +20,18 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <Reveal className="relative flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 sm:gap-12">
-        <h1 className="font-serif text-[clamp(2.8rem,7.5vw,7rem)] leading-[0.97] tracking-tight text-ink max-w-[700px]">
-          {t("title1")}
-          <br />
-          <em className="italic text-gold">{t("title2")}</em>
-        </h1>
+      <Reveal className="relative flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between sm:gap-12">
+        <div>
+          {/* Mobile-only tagline */}
+          <p className="sm:hidden text-[0.68rem] font-medium tracking-[0.16em] uppercase text-muted-text mb-6">
+            {t("bgSlogan")}
+          </p>
+          <h1 className="font-serif text-[clamp(3rem,7.5vw,7rem)] leading-[0.97] tracking-tight text-ink max-w-[700px]">
+            {t("title1")}
+            <br />
+            <em className="italic text-gold">{t("title2")}</em>
+          </h1>
+        </div>
         <div className="sm:max-w-[280px] sm:shrink-0">
           <p className="text-[0.88rem] leading-7 text-muted-text mb-6 sm:mb-8">
             {t("subtitle")}
