@@ -15,7 +15,7 @@ export function Hero() {
           </sup>
         </span>
         <span className="font-sans text-[clamp(0.6rem,1.1vw,0.9rem)] font-normal tracking-[0.15em] sm:tracking-[0.2em] uppercase text-ink/[0.3] whitespace-nowrap mt-2 block">
-          {t("bgSlogan")}
+          Lo imaginas. Lo construimos.
         </span>
       </div>
 
