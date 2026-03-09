@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "cta": "Get Started"
+  },
+  "hero": {
+    "title1": "Your idea,",
+    "title2": "built.",
+    "subtitle": "Portals, systems and platforms for your business. Tell us what you need — we design and deliver it.",
+    "cta": "Free quote",
+    "bgSlogan": "You imagine it. We build it."
+  },
+  "banner": {
+    "bold": "Getting a quote is 100% free, no strings attached.",
+    "text": "You only pay if you decide to proceed."
+  },
+  "possibilities": {
+    "tag": "What AI can do for you",
+    "title1": "Ideas that",
+    "title2": "transform",
+    "title3": "businesses",
+    "subtitle": "You don't need to know about technology. Just think about what wastes your time or costs you money — we turn it into a smart solution.",
+    "items": [
+      {
+        "icon": "repeat",
+        "title": "Task automation",
+        "desc": "Invoicing, data entry, reports, order tracking — everything repetitive can run on its own.",
+        "example": "E.g.: Auto-generate invoices from your order system"
+      },
+      {
+        "icon": "message",
+        "title": "Chatbots & customer support",
+        "desc": "Smart assistants that answer questions, take orders, and solve problems 24/7.",
+        "example": "E.g.: A WhatsApp bot that handles your customers' FAQs"
+      },
+      {
+        "icon": "chart",
+        "title": "Data analysis & prediction",
+        "desc": "Dashboards that show trends, predict demand, and help you make better decisions.",
+        "example": "E.g.: Predict which products will run out next week"
+      },
+      {
+        "icon": "file",
+        "title": "Document processing",
+        "desc": "Extract data from invoices, contracts, or forms automatically. No more copy-paste.",
+        "example": "E.g.: Read supplier PDFs and load the data into your system"
+      },
+      {
+        "icon": "tool",
+        "title": "Custom internal tools",
+        "desc": "Systems that adapt to how your team works, not the other way around.",
+        "example": "E.g.: A portal where your team logs hours and generates instant reports"
+      },
+      {
+        "icon": "strategy",
+        "title": "AI strategy for your business",
+        "desc": "We help you identify where artificial intelligence can have the biggest impact on your operation.",
+        "example": "E.g.: Process audit to find automation opportunities"
+      }
+    ]
+  },
+  "trust": {
+    "items": [
+      {
+        "value": "24h",
+        "label": "Guaranteed response in less than a day"
+      },
+      {
+        "value": "100%",
+        "label": "Solutions custom-built for your business"
+      },
+      {
+        "value": "0",
+        "label": "Cost to get a quote — always free"
+      },
+      {
+        "value": "RD",
+        "label": "Local team, direct communication"
+      }
+    ]
+  },
+  "process": {
+    "tag": "How it works",
+    "steps": [
+      {
+        "title": "Describe your idea",
+        "desc": "No jargon needed. In your own words. Tell us what your business needs."
+      },
+      {
+        "title": "Receive a quote",
+        "desc": "Free. We send you a proposal with pricing, timeline, and a first mockup."
+      },
+      {
+        "title": "Alpha — First look",
+        "desc": "If you approve and pay the 50% upfront, you receive a functional first version."
+      },
+      {
+        "title": "Beta & final delivery",
+        "desc": "You review in beta. The remaining 50% is paid upon final delivery."
+      }
+    ]
+  },
+  "payment": {
+    "items": [
+      {
+        "pct": "0%",
+        "label": "Free quote",
+        "desc": "You receive a complete proposal at no cost or obligation."
+      },
+      {
+        "pct": "50%",
+        "label": "Upfront on approval",
+        "desc": "Upon confirming the project, half is paid to begin development."
+      },
+      {
+        "pct": "50%",
+        "label": "On delivery",
+        "desc": "The remaining balance is paid upon receiving the approved final product."
+      }
+    ]
+  },
+  "form": {
+    "tag": "Request",
+    "title1": "Tell us",
+    "title2": "what you",
+    "title3": "need",
+    "subtitle": "Fill out the form and we'll contact you within 24 hours with a personalized proposal.",
+    "note": "<strong>Getting a quote is free.</strong> There's no cost to receive your proposal. If you decide to proceed, you pay 50% to start and 50% on final delivery.",
+    "name": "Name",
+    "namePlaceholder": "John Doe",
+    "company": "Company",
+    "companyPlaceholder": "My Company LLC",
+    "email": "Email",
+    "emailPlaceholder": "john@company.com",
+    "phone": "WhatsApp / Phone",
+    "phonePlaceholder": "+1 809 000-0000",
+    "type": "Solution type",
+    "typePlaceholder": "Select an option",
+    "typeOptions": [
+      "Internal System / Software",
+      "Web Portal",
+      "Platform or App",
+      "Improvement to existing system",
+      "Online Store",
+      "Process Automation",
+      "Other"
+    ],
+    "description": "Describe your idea",
+    "descriptionPlaceholder": "E.g.: I need a system where my employees log their hours and I can view weekly reports...",
+    "budget": "Approximate budget (optional)",
+    "budgetPlaceholder": "Select a range",
+    "budgetOptions": [
+      "Less than $500 USD",
+      "$500 – $1,500 USD",
+      "$1,500 – $5,000 USD",
+      "$5,000 – $15,000 USD",
+      "More than $15,000 USD",
+      "I don't know yet"
+    ],
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "successTitle": "Request sent.",
+    "successMessage": "We'll review your idea and contact you within 24 hours with a completely free proposal."
+  },
+  "footer": {
+    "copy": "© 2025 Taíno Labs · Dominican Republic · Quotes are always free"
+  }
+}

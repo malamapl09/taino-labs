@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "cta": "Solicitar"
+  },
+  "hero": {
+    "title1": "Tu idea,",
+    "title2": "construida.",
+    "subtitle": "Portales, sistemas y plataformas para tu empresa. Cuéntanos qué necesitas — nosotros lo diseñamos y entregamos.",
+    "cta": "Cotizar gratis",
+    "bgSlogan": "Lo imaginas. Lo construimos."
+  },
+  "banner": {
+    "bold": "Cotizar es 100% gratis y sin compromiso.",
+    "text": "Solo pagas si decides proceder."
+  },
+  "possibilities": {
+    "tag": "Qué puede hacer la IA por ti",
+    "title1": "Ideas que",
+    "title2": "transforman",
+    "title3": "negocios",
+    "subtitle": "No necesitas saber de tecnología. Solo piensa en lo que te quita tiempo o te cuesta dinero — nosotros lo convertimos en una solución inteligente.",
+    "items": [
+      {
+        "icon": "repeat",
+        "title": "Automatización de tareas",
+        "desc": "Facturación, entrada de datos, reportes, seguimiento de pedidos — todo lo repetitivo puede funcionar solo.",
+        "example": "Ej: Generar facturas automáticamente desde tu sistema de pedidos"
+      },
+      {
+        "icon": "message",
+        "title": "Chatbots y atención al cliente",
+        "desc": "Asistentes inteligentes que responden preguntas, toman pedidos y resuelven problemas 24/7.",
+        "example": "Ej: Un bot de WhatsApp que responde preguntas frecuentes de tus clientes"
+      },
+      {
+        "icon": "chart",
+        "title": "Análisis y predicción de datos",
+        "desc": "Dashboards que muestran tendencias, predicen demanda y te ayudan a tomar mejores decisiones.",
+        "example": "Ej: Predecir qué productos se van a agotar la próxima semana"
+      },
+      {
+        "icon": "file",
+        "title": "Procesamiento de documentos",
+        "desc": "Extraer datos de facturas, contratos o formularios automáticamente. Sin copiar y pegar.",
+        "example": "Ej: Leer PDFs de proveedores y cargar los datos a tu sistema"
+      },
+      {
+        "icon": "tool",
+        "title": "Herramientas internas a medida",
+        "desc": "Sistemas que se adaptan a cómo trabaja tu equipo, no al revés.",
+        "example": "Ej: Un portal donde tu equipo registra horas y genera reportes al instante"
+      },
+      {
+        "icon": "strategy",
+        "title": "Estrategia de IA para tu empresa",
+        "desc": "Te ayudamos a identificar dónde la inteligencia artificial puede tener mayor impacto en tu operación.",
+        "example": "Ej: Auditoría de procesos para encontrar oportunidades de automatización"
+      }
+    ]
+  },
+  "trust": {
+    "items": [
+      {
+        "value": "24h",
+        "label": "Respuesta garantizada en menos de un día"
+      },
+      {
+        "value": "100%",
+        "label": "Soluciones hechas a medida para tu negocio"
+      },
+      {
+        "value": "0",
+        "label": "Costo por cotizar — siempre gratis"
+      },
+      {
+        "value": "RD",
+        "label": "Equipo local, comunicación directa"
+      }
+    ]
+  },
+  "process": {
+    "tag": "Cómo funciona",
+    "steps": [
+      {
+        "title": "Describes tu idea",
+        "desc": "Sin tecnicismos. En tus palabras. Nos dices qué necesitas para tu empresa."
+      },
+      {
+        "title": "Recibes cotización",
+        "desc": "Gratis. Te enviamos propuesta con precio, tiempo estimado y primer boceto."
+      },
+      {
+        "title": "Alpha — Primera vista",
+        "desc": "Si apruebas y pagas el 50% de adelanto, recibes una versión funcional inicial."
+      },
+      {
+        "title": "Beta y entrega final",
+        "desc": "Ajustas en beta. El 50% restante se paga contra entrega del producto final."
+      }
+    ]
+  },
+  "payment": {
+    "items": [
+      {
+        "pct": "0%",
+        "label": "Cotización gratuita",
+        "desc": "Recibes propuesta completa sin ningún costo ni compromiso."
+      },
+      {
+        "pct": "50%",
+        "label": "Adelanto al aprobar",
+        "desc": "Al confirmar el proyecto se paga la mitad para iniciar el desarrollo."
+      },
+      {
+        "pct": "50%",
+        "label": "Contra entrega",
+        "desc": "El balance restante se paga al recibir el producto final aprobado."
+      }
+    ]
+  },
+  "form": {
+    "tag": "Solicitud",
+    "title1": "Cuéntanos",
+    "title2": "qué",
+    "title3": "necesitas",
+    "subtitle": "Completa el formulario y te contactamos antes de 24 horas con una propuesta personalizada.",
+    "note": "<strong>Cotizar es gratis.</strong> No hay costo por recibir tu propuesta. Si decides proceder, pagas 50% para iniciar y 50% contra entrega final.",
+    "name": "Nombre",
+    "namePlaceholder": "Juan Pérez",
+    "company": "Empresa",
+    "companyPlaceholder": "Mi Empresa S.R.L.",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "juan@empresa.com",
+    "phone": "WhatsApp / Teléfono",
+    "phonePlaceholder": "+1 809 000-0000",
+    "type": "Tipo de solución",
+    "typePlaceholder": "Selecciona una opción",
+    "typeOptions": [
+      "Sistema / Software interno",
+      "Portal web",
+      "Plataforma o App",
+      "Mejora a sistema existente",
+      "Tienda en línea",
+      "Automatización de procesos",
+      "Otro"
+    ],
+    "description": "Describe tu idea",
+    "descriptionPlaceholder": "Ej: Necesito un sistema donde mis empleados registren sus horas y yo pueda ver reportes semanales...",
+    "budget": "Presupuesto aproximado (opcional)",
+    "budgetPlaceholder": "Selecciona un rango",
+    "budgetOptions": [
+      "Menos de $500 USD",
+      "$500 – $1,500 USD",
+      "$1,500 – $5,000 USD",
+      "$5,000 – $15,000 USD",
+      "Más de $15,000 USD",
+      "No lo sé aún"
+    ],
+    "submit": "Enviar solicitud",
+    "submitting": "Enviando...",
+    "successTitle": "Solicitud enviada.",
+    "successMessage": "Revisaremos tu idea y te contactaremos en menos de 24 horas con una propuesta completamente gratuita."
+  },
+  "footer": {
+    "copy": "© 2025 Taíno Labs · República Dominicana · Cotizar siempre es gratis"
+  }
+}
