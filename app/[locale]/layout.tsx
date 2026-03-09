@@ -22,6 +22,12 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }

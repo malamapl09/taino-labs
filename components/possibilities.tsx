@@ -57,15 +57,15 @@ export function Possibilities() {
   ) as { icon: string; title: string; desc: string; example: string }[];
 
   return (
-    <section className="py-24 px-5 md:px-10 border-b border-line">
+    <section className="py-16 sm:py-24 px-4 sm:px-5 md:px-10 border-b border-line">
       {/* Header */}
-      <div className="max-w-[600px] mb-16">
+      <div className="max-w-[600px] mb-10 sm:mb-16">
         <div className="text-[0.68rem] font-medium tracking-[0.16em] uppercase text-muted-text mb-6 flex items-center gap-3">
           {t("tag")}
           <span className="flex-1 h-px bg-line max-w-[60px]" />
         </div>
         <Reveal>
-          <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] tracking-tight text-ink mb-4">
+          <h2 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] leading-[1.05] tracking-tight text-ink mb-4">
             {t("title1")} <em className="italic text-gold">{t("title2")}</em>{" "}
             {t("title3")}
           </h2>
@@ -80,27 +80,21 @@ export function Possibilities() {
         {items.map((item, i) => (
           <Reveal key={i} delay={i * 60}>
             <div
-              className={`p-8 border-line ${
-                /* right borders for cols 1,2 on lg */
+              className={`px-4 py-6 sm:p-8 border-line ${
                 i % 3 !== 2 ? "lg:border-r" : ""
               } ${
-                /* bottom borders for all except last row */
                 i < 3 ? "border-b" : ""
               } ${
-                /* md: right border on odd items */
                 i % 2 === 0 ? "md:border-r lg:border-r-0" : ""
               } ${
-                /* re-apply lg right borders */
                 i % 3 !== 2 ? "lg:border-r" : ""
               } ${
-                /* md: bottom borders for first 4 */
                 i < 4 ? "md:border-b" : "md:border-b-0"
               } ${
-                /* lg: only first 3 get bottom */
                 i < 3 ? "lg:border-b" : "lg:border-b-0"
               }`}
             >
-              <div className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-muted-text mb-5">
+              <div className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-muted-text mb-4 sm:mb-5">
                 {icons[item.icon]}
               </div>
               <h3 className="text-[0.92rem] font-medium text-ink mb-2 tracking-tight">

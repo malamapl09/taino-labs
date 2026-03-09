@@ -70,21 +70,24 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
     setIsSuccess(true);
   }
 
+  const inputClass =
+    "w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2.5 outline-none focus:border-ink transition-colors placeholder:text-muted-text/40 rounded-none";
+
   return (
-    <section className="py-24 px-5 md:px-10 bg-white" id="solicitar">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 max-w-[1100px]">
+    <section className="py-16 sm:py-24 px-4 sm:px-5 md:px-10 bg-white" id="solicitar">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 max-w-[1100px]">
         {/* Left side */}
         <Reveal>
-          <div className="text-[0.68rem] font-medium tracking-[0.16em] uppercase text-muted-text mb-14 flex items-center gap-3">
+          <div className="text-[0.68rem] font-medium tracking-[0.16em] uppercase text-muted-text mb-8 sm:mb-14 flex items-center gap-3">
             {t("tag")}
             <span className="flex-1 h-px bg-line max-w-[60px]" />
           </div>
-          <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] tracking-tight text-ink mb-4">
+          <h2 className="font-serif text-[clamp(1.75rem,4vw,3.5rem)] leading-[1.05] tracking-tight text-ink mb-4">
             {t("title1")}
             <br />
             {t("title2")} <em className="italic text-muted-text">{t("title3")}</em>
           </h2>
-          <p className="text-[0.86rem] leading-7 text-muted-text mb-8">
+          <p className="text-[0.86rem] leading-7 text-muted-text mb-6 sm:mb-8">
             {t("subtitle")}
           </p>
           <div className="pl-4 border-l-2 border-gold bg-gold/5 py-4 pr-4">
@@ -113,7 +116,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                     name="nombre"
                     placeholder={t("namePlaceholder")}
                     required
-                    className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors placeholder:text-muted-text/40 rounded-none"
+                    className={inputClass}
                   />
                 </div>
                 <div className="mb-5">
@@ -124,7 +127,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                     type="text"
                     name="empresa"
                     placeholder={t("companyPlaceholder")}
-                    className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors placeholder:text-muted-text/40 rounded-none"
+                    className={inputClass}
                   />
                 </div>
               </div>
@@ -140,7 +143,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                     name="email"
                     placeholder={t("emailPlaceholder")}
                     required
-                    className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors placeholder:text-muted-text/40 rounded-none"
+                    className={inputClass}
                   />
                 </div>
                 <div className="mb-5">
@@ -151,7 +154,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                     type="tel"
                     name="telefono"
                     placeholder={t("phonePlaceholder")}
-                    className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors placeholder:text-muted-text/40 rounded-none"
+                    className={inputClass}
                   />
                 </div>
               </div>
@@ -165,7 +168,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                   name="tipo"
                   required
                   defaultValue=""
-                  className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors cursor-pointer appearance-none rounded-none"
+                  className={`${inputClass} cursor-pointer appearance-none`}
                 >
                   <option value="" disabled>
                     {t("typePlaceholder")}
@@ -189,7 +192,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                   required
                   maxLength={1000}
                   onChange={(e) => setCharCount(e.target.value.length)}
-                  className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors placeholder:text-muted-text/40 resize-none min-h-[90px] leading-relaxed rounded-none"
+                  className={`${inputClass} resize-none min-h-[100px] leading-relaxed`}
                 />
                 <div
                   className={`text-[0.68rem] text-right mt-1 transition-colors ${
@@ -208,7 +211,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                 <select
                   name="presupuesto"
                   defaultValue=""
-                  className="w-full bg-transparent border-0 border-b border-line text-ink font-sans text-[0.9rem] font-light py-2 outline-none focus:border-ink transition-colors cursor-pointer appearance-none rounded-none"
+                  className={`${inputClass} cursor-pointer appearance-none`}
                 >
                   <option value="" disabled>
                     {t("budgetPlaceholder")}
@@ -225,7 +228,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-ink text-white border-0 font-sans font-medium text-[0.78rem] tracking-[0.1em] uppercase py-4 px-6 cursor-pointer hover:opacity-65 transition-opacity mt-3 flex items-center justify-center gap-2 rounded-sm disabled:opacity-35 disabled:pointer-events-none"
+                className="w-full bg-ink text-white border-0 font-sans font-medium text-[0.78rem] tracking-[0.1em] uppercase py-4 px-6 cursor-pointer hover:opacity-65 transition-opacity mt-3 flex items-center justify-center gap-2 rounded-sm disabled:opacity-35 disabled:pointer-events-none min-h-[48px]"
               >
                 <span>{isSubmitting ? t("submitting") : t("submit")}</span>
                 <svg
@@ -254,7 +257,7 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                   <path d="M20 6L9 17l-5-5" />
                 </svg>
               </div>
-              <h3 className="font-serif text-3xl text-ink mb-1.5 tracking-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl text-ink mb-1.5 tracking-tight">
                 {t("successTitle")}
               </h3>
               <p className="text-[0.85rem] text-muted-text leading-7 max-w-[340px]">

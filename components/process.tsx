@@ -12,12 +12,12 @@ export function Process() {
   ] as { title: string; desc: string }[];
 
   return (
-    <section className="py-24 px-5 md:px-10 border-b border-line">
-      <div className="text-[0.68rem] font-medium tracking-[0.16em] uppercase text-muted-text mb-14 flex items-center gap-3">
+    <section className="py-16 sm:py-24 px-4 sm:px-5 md:px-10 border-b border-line">
+      <div className="text-[0.68rem] font-medium tracking-[0.16em] uppercase text-muted-text mb-10 sm:mb-14 flex items-center gap-3">
         {t("tag")}
         <span className="flex-1 h-px bg-line max-w-[60px]" />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-0">
         {steps.map((step, i) => (
           <Reveal key={i} delay={i * 70}>
             <div
@@ -25,9 +25,9 @@ export function Process() {
                 i < steps.length - 1
                   ? "lg:border-r border-line"
                   : ""
-              } ${i > 0 ? "lg:pl-8 mt-10 sm:mt-0" : ""}`}
+              } ${i > 0 ? "lg:pl-8" : ""}`}
             >
-              <div className="font-serif text-4xl text-line leading-none mb-5">
+              <div className="font-serif text-4xl text-line leading-none mb-4 sm:mb-5">
                 {String(i + 1).padStart(2, "0")}
               </div>
               <h3 className="text-[0.88rem] font-medium text-ink mb-1.5 tracking-tight">
