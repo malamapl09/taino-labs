@@ -35,7 +35,9 @@ export async function submitContactForm(formData: FormData) {
     timeZone: "America/Santo_Domingo",
   });
 
-  const to = process.env.CONTACT_EMAIL || "tu@email.com";
+  const to = (process.env.CONTACT_EMAIL || "tu@email.com")
+    .split(",")
+    .map((e) => e.trim());
 
   try {
     const resend = getResend();
