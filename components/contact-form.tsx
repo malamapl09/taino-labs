@@ -3,12 +3,14 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Reveal } from "./reveal";
+import { submitContactForm } from "@/lib/actions/contact";
 
 export function ContactForm() {
   const t = useTranslations("form");
   const [charCount, setCharCount] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const typeOptions = [
     t("typeOptions.0"),
@@ -32,42 +34,18 @@ export function ContactForm() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    const nombre = data.get("nombre") as string;
-    const empresa = data.get("empresa") as string;
-    const email = data.get("email") as string;
-    const telefono = data.get("telefono") as string;
-    const tipo = data.get("tipo") as string;
-    const descripcion = data.get("descripcion") as string;
-    const presupuesto = data.get("presupuesto") as string;
+    const formData = new FormData(e.currentTarget);
+    const result = await submitContactForm(formData);
 
-    const subject = encodeURIComponent(
-      `[Taíno Labs] Solicitud de ${nombre}`
-    );
-    const body = encodeURIComponent(
-      `Nueva solicitud — Taíno Labs
-━━━━━━━━━━━━━━━━━━━━━━━
-Nombre:      ${nombre}
-Empresa:     ${empresa || "No indicada"}
-Email:       ${email}
-Teléfono:    ${telefono || "No indicado"}
-
-Tipo:        ${tipo}
-Presupuesto: ${presupuesto || "No indicado"}
-
-Descripción:
-${descripcion}
-
-━━━━━━━━━━━━━━━━━━━━━━━
-Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" })}`
-    );
-
-    await new Promise((r) => setTimeout(r, 600));
-    window.location.href = `mailto:TU_EMAIL@gmail.com?subject=${subject}&body=${body}`;
     setIsSubmitting(false);
-    setIsSuccess(true);
+
+    if (result.error) {
+      setError(result.error);
+    } else {
+      setIsSuccess(true);
+    }
   }
 
   const inputClass =
@@ -223,6 +201,11 @@ Fecha: ${new Date().toLocaleString("es-DO", { timeZone: "America/Santo_Domingo" 
                   ))}
                 </select>
               </div>
+
+              {/* Error */}
+              {error && (
+                <p className="text-[0.8rem] text-red-600 mb-3">{error}</p>
+              )}
 
               {/* Submit */}
               <button
